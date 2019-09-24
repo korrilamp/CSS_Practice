@@ -23,14 +23,25 @@
 		.boxedLEFT{padding: 15px;width:70%; float:left;height:auto; background-color:#fff}
 		.boxedRIGHT{padding:15px;width:25%; float:right;height:auto;background-color: #F288EB}
 		.clear{clear: both;}
-		ul{list-style-type: circle;}
+		ul {
+		  list-style: none;
+		}
+
+		ul li::before {
+		  content: "\2022";
+		  color: #000;
+		  font-weight: bold; 
+		  display: inline-block;
+		  width: 1em;
+		  margin-left: -1em;
+		}
 		<br style="line-height:5px;" /> 
 	
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Header</h1>
+		<h1>Header!</h1>
 	</header>
 	<nav>
 		<ul>
